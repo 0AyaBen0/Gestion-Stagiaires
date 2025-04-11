@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTAGE</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/creation.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="back">
+            <a href="Gestion_stagiaire.jsp" class="previous round"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        
+        <h2>Création Stagiaire</h2>
+        <form action="ajouter_stagiaire.do" method="get">
+            <div class="user_details">
+                <div class="input_box">
+                    <span class="title">Nom</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                        <input name="nom" type="text" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Prénom</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                        <input name="prenom" type="text" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Diplome</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <input name="diplo" type="text" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <span class="title">Date de Naissance</span>
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-week"></i>
+                        <input name="date" type="date" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user_gender">
+                <span class="title">Gender</span>
+                <div class="gender_category">
+                    <label for="M">
+                        <span>Male</span>
+                        <input type="radio" name="gender" id="male" value="M" required>
+                    </label>
+                    <label for="F">
+                        <span>Female</span>
+                        <input type="radio" name="gender" id="female" value="F">
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="button">
+                <button type="submit">Création</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/76629e1a19.js" crossorigin="anonymous"></script>
+</body>
+</html>
